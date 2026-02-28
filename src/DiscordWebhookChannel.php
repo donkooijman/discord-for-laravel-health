@@ -18,7 +18,7 @@ class DiscordWebhookChannel
         }
 
         /** @var array{content?: string, embeds?: array<int, mixed>} $message */
-        $message = $notification->toDiscord($notifiable);
+        $message = $notification->toDiscord($notifiable); // @phpstan-ignore method.notFound
 
         return Http::post($webhookUrl, $message);
     }
