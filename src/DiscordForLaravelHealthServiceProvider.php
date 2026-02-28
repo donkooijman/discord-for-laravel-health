@@ -13,7 +13,7 @@ class DiscordForLaravelHealthServiceProvider extends PackageServiceProvider
     {
         $package
             ->name('discord-for-laravel-health')
-            ->hasConfigFile();
+            ->hasConfigFile('discord-for-laravel-health');
     }
 
     public function packageRegistered(): void
