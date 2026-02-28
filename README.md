@@ -6,6 +6,10 @@
 
 Send [spatie/laravel-health](https://github.com/spatie/laravel-health) check failure notifications to a Discord channel via webhooks. Each failed check is formatted as a color-coded embed (green for OK, yellow for warning, red for failed/crashed).
 
+## Requirements
+
+This package requires [spatie/laravel-health](https://github.com/spatie/laravel-health) to be installed and configured in your application. If you haven't set it up yet, follow their [installation instructions](https://spatie.be/docs/laravel-health) first.
+
 ## Installation
 
 Install the package via Composer:
@@ -15,6 +19,8 @@ composer require donkooijman/discord-for-laravel-health
 ```
 
 ## Configuration
+
+You'll need a Discord webhook URL. You can learn how to create one in the [Discord API docs](https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks).
 
 Add your Discord webhook URL to your `.env` file:
 
